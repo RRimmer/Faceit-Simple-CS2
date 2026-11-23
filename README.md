@@ -1,0 +1,1 @@
+# Faceit-Simple-CS2
