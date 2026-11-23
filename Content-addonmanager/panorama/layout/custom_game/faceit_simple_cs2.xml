@@ -1,0 +1,34 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/csgostyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/faceit_simple_cs2.vcss_c" />
+	</styles>
+	<!-- Faceit-Simple-cs2 0.1.1: the vote card on the right side. Everything is per player (sf-root). -->
+	<Panel class="sf-screen" hittest="false">
+		<Panel id="sf-root" class="sf-root" hittest="false">
+			<Panel class="sf-card" hittest="false">
+				<Panel class="sf-head" hittest="false">
+					<Panel class="sf-icon" hittest="false" />
+					<Label class="sf-title" hittest="false" text="{s:sf_title}" />
+					<Panel class="sf-grow" hittest="false" />
+					<Label class="sf-time" hittest="false" text="{s:sf_time}" />
+					<Button id="sf-btn-close" class="sf-close">
+						<Label hittest="false" text="✕" />
+					</Button>
+				</Panel>
+				<Label class="sf-sub" hittest="false" text="{s:sf_sub}" />
+				<Panel class="sf-buttons" hittest="false">
+					<Button id="sf-btn-a" class="sf-btn sf-btn-a">
+						<Label class="sf-btn-text" hittest="false" text="{s:sf_a}" />
+						<Label class="sf-btn-count" hittest="false" text="{s:sf_ca}" />
+					</Button>
+					<Button id="sf-btn-b" class="sf-btn sf-btn-b">
+						<Label class="sf-btn-text" hittest="false" text="{s:sf_b}" />
+						<Label class="sf-btn-count" hittest="false" text="{s:sf_cb}" />
+					</Button>
+				</Panel>
+				<Label class="sf-hint" hittest="false" text="{s:sf_hint}" />
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

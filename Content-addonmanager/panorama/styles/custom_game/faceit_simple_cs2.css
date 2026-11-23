@@ -1,0 +1,252 @@
+/* ============================================================
+   Faceit-Simple-cs2 0.1.1 - vote card on the right side of the screen
+   Classes the plugin toggles on #sf-root (per player):
+     sf-on                  the card is shown
+     sf-knife / sf-side     knife vote (Yes / No) or side vote (T / CT)
+     sf-can                 this player may vote (otherwise buttons are hidden)
+     sf-voted-a / sf-voted-b   this player's choice
+     sf-urgent              5 seconds or less left
+   Position: edit .sf-root (margin-top / margin-right).
+   ============================================================ */
+
+.sf-screen
+{
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+}
+
+.sf-root
+{
+	width: 340px;
+	height: fit-children;
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 24px;
+	margin-top: -60px;
+	visibility: collapse;
+	opacity: 0;
+	transform: translateX( 40px );
+	transition-property: opacity, transform;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-out;
+}
+
+.sf-root.sf-on
+{
+	visibility: visible;
+	opacity: 1;
+	transform: translateX( 0px );
+}
+
+.sf-card
+{
+	width: 100%;
+	flow-children: down;
+	padding: 14px 16px 12px 16px;
+	background-color: #0D1117E6;
+	border: 1px solid #FF550066;
+	border-radius: 10px;
+	box-shadow: #00000099 0px 4px 18px 0px;
+	font-family: Stratum2, 'Arial Unicode MS';
+	color: #E7EDF4;
+}
+
+.sf-head
+{
+	width: 100%;
+	flow-children: right;
+}
+
+.sf-head Label
+{
+	vertical-align: center;
+}
+
+.sf-icon
+{
+	width: 6px;
+	height: 22px;
+	vertical-align: center;
+	border-radius: 3px;
+	background-color: #FF5500;
+	margin-right: 10px;
+}
+
+.sf-title
+{
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.sf-grow
+{
+	width: fill-parent-flow( 1 );
+}
+
+.sf-time
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFB27A;
+	margin-right: 8px;
+}
+
+.sf-root.sf-urgent .sf-time
+{
+	color: #FF4D4D;
+}
+
+.sf-close
+{
+	width: 24px;
+	height: 24px;
+	vertical-align: center;
+	border-radius: 4px;
+	background-color: #FFFFFF10;
+}
+
+.sf-close Label
+{
+	horizontal-align: center;
+	vertical-align: center;
+	font-size: 13px;
+	color: #9AA4B2;
+}
+
+/* MenuType 3 (chat only): the card is shown, there is no cursor, so no cross */
+.sf-root.sf-chatonly .sf-close
+{
+	visibility: collapse;
+}
+
+.sf-close:hover
+{
+	background-color: #FF4D4D40;
+}
+
+.sf-sub
+{
+	width: 100%;
+	margin-top: 8px;
+	font-size: 15px;
+	color: #B8C2CE;
+}
+
+.sf-buttons
+{
+	width: 100%;
+	flow-children: right;
+	margin-top: 12px;
+	visibility: collapse;
+}
+
+.sf-root.sf-can .sf-buttons
+{
+	visibility: visible;
+}
+
+.sf-btn
+{
+	width: fill-parent-flow( 1 );
+	height: 44px;
+	flow-children: right;
+	padding: 0px 12px;
+	border-radius: 6px;
+	border: 1px solid #FFFFFF22;
+	background-color: #FFFFFF0D;
+	transition-property: background-color, border;
+	transition-duration: 0.12s;
+}
+
+.sf-btn-a
+{
+	margin-right: 8px;
+}
+
+.sf-btn Label
+{
+	vertical-align: center;
+}
+
+.sf-btn-text
+{
+	width: fill-parent-flow( 1 );
+	font-size: 17px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.sf-btn-count
+{
+	font-size: 17px;
+	font-weight: bold;
+	color: #9AA4B2;
+}
+
+.sf-btn:hover
+{
+	background-color: #FFFFFF1F;
+	border: 1px solid #FFFFFF55;
+}
+
+/* knife vote: yes - orange, no - grey */
+.sf-root.sf-knife .sf-btn-a:hover,
+.sf-root.sf-knife.sf-voted-a .sf-btn-a
+{
+	background-color: #FF550055;
+	border: 1px solid #FF5500;
+}
+
+.sf-root.sf-knife.sf-voted-b .sf-btn-b
+{
+	background-color: #9AA4B255;
+	border: 1px solid #9AA4B2;
+}
+
+/* side vote: T - gold, CT - blue */
+.sf-root.sf-side .sf-btn-a .sf-btn-text
+{
+	color: #EAD18A;
+}
+
+.sf-root.sf-side .sf-btn-b .sf-btn-text
+{
+	color: #8FB8FF;
+}
+
+.sf-root.sf-side .sf-btn-a:hover,
+.sf-root.sf-side.sf-voted-a .sf-btn-a
+{
+	background-color: #C9A24A55;
+	border: 1px solid #EAD18A;
+}
+
+.sf-root.sf-side .sf-btn-b:hover,
+.sf-root.sf-side.sf-voted-b .sf-btn-b
+{
+	background-color: #3F7BDB55;
+	border: 1px solid #8FB8FF;
+}
+
+.sf-root.sf-voted-a .sf-btn-a .sf-btn-count,
+.sf-root.sf-voted-b .sf-btn-b .sf-btn-count
+{
+	color: #FFFFFF;
+}
+
+.sf-hint
+{
+	width: 100%;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #6F7A88;
+	visibility: collapse;
+}
+
+.sf-root.sf-can .sf-hint
+{
+	visibility: visible;
+}
