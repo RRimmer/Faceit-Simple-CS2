@@ -7,6 +7,9 @@
 <a href="https://genesis-cs.space/menuconstructor/menumanager/plugins/">
   <img src="images/PMMPluginsMini.jpg" alt="PMM MenuManager — many plugins in one place">
 </a>
+<a href="https://genesis-cs.space/menuconstructor/menumanager/plugins/">
+  <img src="images/FaceitS.jpg" alt="Faceit-Simple-CS2 preview">
+</a>
 
 [English](#english) · [Русский](#русский)
 
