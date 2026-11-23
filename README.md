@@ -8,7 +8,7 @@
 
 ## English
 
-**Faceit-Simple-CS2 0.1.1** by **Rimmer** brings the Faceit-style warmup to CS2: unlimited warmup money, dropped weapons cleaned up, a knife vote on a Panorama card, a knife-only first round and the winners picking their side before the match starts at 0:0. It is a port of the CS:GO SourceMod plugin *Faceit Warmup 2.0* by the same author; the original all-talk on warmup was dropped on purpose.
+**Faceit-Simple-CS2 0.1.1** by **Rimmer** brings the Faceit-style warmup to CS2: unlimited warmup money, dropped weapons cleaned up, a knife vote on a Panorama card, a knife-only first round and the winners picking their side before the match starts at 0:0. It is a port of the CS:GO SourceMod plugin [*Faceit Warmup 2.0*](https://github.com/RRimmer/Faceit-Warmup) by the same author; the original all-talk on warmup was dropped on purpose.
 
 ### Requirements
 
@@ -136,7 +136,7 @@ The plugin is licensed under the **GNU GPL v3** — see [LICENSE](LICENSE). No t
 
 ## Русский
 
-**Faceit-Simple-CS2 0.1.1** от **Rimmer** — разминка в стиле Faceit для CS2: деньги без ограничений, очистка выпавшего оружия, голосование за ножевой раунд на панорамной плашке, первый раунд только с ножами и выбор стороны победителями перед стартом матча с 0:0. Это порт CS:GO-плагина *Faceit Warmup 2.0* того же автора; общий голосовой чат на разминке из оригинала намеренно убран.
+**Faceit-Simple-CS2 0.1.1** от **Rimmer** — разминка в стиле Faceit для CS2: деньги без ограничений, очистка выпавшего оружия, голосование за ножевой раунд на панорамной плашке, первый раунд только с ножами и выбор стороны победителями перед стартом матча с 0:0. Это порт CS:GO-плагина [*Faceit Warmup 2.0*](https://github.com/RRimmer/Faceit-Warmup) того же автора; общий голосовой чат на разминке из оригинала намеренно убран.
 
 ### Что нужно
 
