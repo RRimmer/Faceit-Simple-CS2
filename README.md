@@ -2,22 +2,15 @@
 
 [![Boosty](https://img.shields.io/badge/Boosty-Support%20%2F%20%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C-F15F2C?style=for-the-badge&logo=boosty&logoColor=white)](https://boosty.to/rimmerquinella)
 
-![Faceit-Simple — CS2 preview](images/faceit-preview.svg)
+<a href="https://genesis-cs.space/menuconstructor/menumanager/plugins/">
+  <img src="images/FaceitS.jpg" alt="Faceit-Simple-CS2 preview">
+</a>
 
 [English](#english) · [Русский](#русский)
 
-## Screenshots / Снимки
-
-<p align="center">
-  <a href="images/Untitled_3.mp4">
-    <img src="images/FaceitS.jpg" alt="Faceit-Simple-CS2 overview" width="49%">
-  </a>
-  <img src="images/FaceitSIcon.jpg" alt="Faceit-Simple-CS2 icon" width="49%">
-</p>
-
 ### Demo / Демо
 
-[Watch the Faceit-Simple-CS2 demonstration / Смотреть демонстрацию Faceit-Simple-CS2](images/Untitled_3.mp4)
+[Watch the Faceit-Simple-CS2 demonstration on YouTube / Смотреть демонстрацию Faceit-Simple-CS2 на YouTube](https://youtu.be/mGGGrA2bFYc)
 
 ## English
 
