@@ -6,6 +6,19 @@
 
 [English](#english) · [Русский](#русский)
 
+## Screenshots / Снимки
+
+<p align="center">
+  <a href="images/Untitled_3.mp4">
+    <img src="images/FaceitS.jpg" alt="Faceit-Simple-CS2 overview" width="49%">
+  </a>
+  <img src="images/FaceitSIcon.jpg" alt="Faceit-Simple-CS2 icon" width="49%">
+</p>
+
+### Demo / Демо
+
+[Watch the Faceit-Simple-CS2 demonstration / Смотреть демонстрацию Faceit-Simple-CS2](images/Untitled_3.mp4)
+
 ## English
 
 **Faceit-Simple-CS2 0.1.1** by **Rimmer** brings the Faceit-style warmup to CS2: unlimited warmup money, dropped weapons cleaned up, a knife vote on a Panorama card, a knife-only first round and the winners picking their side before the match starts at 0:0. It is a port of the CS:GO SourceMod plugin [*Faceit Warmup 2.0*](https://github.com/RRimmer/Faceit-Warmup) by the same author; the original all-talk on warmup was dropped on purpose.
